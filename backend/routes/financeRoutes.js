@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const financialData = require("../data/financialData.json");
+const financialData = require("../data/FinancialData.json");
 
 // Get Portfolio Performance
 router.get("/portfolio", (req, res) => {
