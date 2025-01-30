@@ -23,7 +23,7 @@ const StrategyComparison = () => {
         endDate,
         timeframe
       };
-      const response = await axios.get("http://localhost:5000/api/strategies/compare", { params });
+      const response = await axios.get("https://moneyai.onrender.com/api/strategies/compare", { params });
       setData(response.data);
       setError(null);
     } catch (err) {
