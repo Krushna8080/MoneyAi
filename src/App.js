@@ -76,9 +76,9 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const portfolioResponse = await axios.get("http://https://moneyai.onrender.com/api/portfolio");
-        const allocationResponse = await axios.get("http://https://moneyai.onrender.com/api/allocation");
-        const tradesResponse = await axios.get("http://https://moneyai.onrender.com/api/trades");
+        const portfolioResponse = await axios.get("https://moneyai.onrender.com/api/portfolio");
+        const allocationResponse = await axios.get("https://moneyai.onrender.com/api/allocation");
+        const tradesResponse = await axios.get("https://moneyai.onrender.com/api/trades");
 
         setPortfolioData(portfolioResponse.data);
         setFilteredData(portfolioResponse.data);
