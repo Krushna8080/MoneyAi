@@ -1,0 +1,198 @@
+/* Chart Container Styles */
+.charts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background-color: var(--background-light);
+  }
+  
+  /* Chart Card Styles */
+  .chart-card {
+    background: var(--card-background-light);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+  }
+  
+  .dark .chart-card {
+    background: var(--card-background-dark);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Chart Header Styles */
+  .chart-header {
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dark .chart-header {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .chart-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-primary-light);
+    margin: 0;
+  }
+  
+  .dark .chart-title {
+    color: var(--text-primary-dark);
+  }
+  
+  /* Chart Content Styles */
+  .chart-content {
+    padding: 1.5rem;
+    position: relative;
+  }
+  
+  /* Chart Tooltip Styles */
+  .recharts-tooltip-wrapper {
+    background: var(--card-background-light);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    padding: 0.75rem;
+  }
+  
+  .dark .recharts-tooltip-wrapper {
+    background: var(--card-background-dark);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .recharts-tooltip-label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .recharts-tooltip-item {
+    padding: 0.25rem 0;
+  }
+  
+  /* Chart Legend Styles */
+  .recharts-legend-wrapper {
+    padding: 0.75rem 1.5rem;
+    border-top: 1px solid var(--border-color);
+  }
+  
+  .dark .recharts-legend-wrapper {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .recharts-legend-item {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s ease;
+  }
+  
+  .recharts-legend-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  .dark .recharts-legend-item:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  /* Chart Axis Styles */
+  .recharts-cartesian-axis-line {
+    stroke: var(--border-color);
+  }
+  
+  .recharts-cartesian-axis-tick-line {
+    stroke: var(--border-color);
+  }
+  
+  .recharts-cartesian-axis-tick-value {
+    fill: var(--text-secondary-light);
+    font-size: 0.75rem;
+  }
+  
+  .dark .recharts-cartesian-axis-tick-value {
+    fill: var(--text-secondary-dark);
+  }
+  
+  /* Chart Grid Styles */
+  .recharts-cartesian-grid-horizontal line,
+  .recharts-cartesian-grid-vertical line {
+    stroke: var(--border-color);
+    stroke-opacity: 0.2;
+  }
+  
+  .dark .recharts-cartesian-grid-horizontal line,
+  .dark .recharts-cartesian-grid-vertical line {
+    stroke: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Line Chart Specific Styles */
+  .recharts-line {
+    stroke-width: 2;
+  }
+  
+  .recharts-line-dot {
+    fill: var(--primary-color);
+    stroke: white;
+    stroke-width: 2;
+  }
+  
+  /* Bar Chart Specific Styles */
+  .recharts-bar-rectangle {
+    transition: opacity 0.2s ease;
+  }
+  
+  .recharts-bar-rectangle:hover {
+    opacity: 0.8;
+  }
+  
+  /* Pie Chart Specific Styles */
+  .recharts-pie {
+    transition: transform 0.2s ease;
+  }
+  
+  .recharts-pie-sector:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    .charts-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .chart-card {
+      border-radius: 0.5rem;
+    }
+    
+    .chart-header {
+      padding: 1rem;
+    }
+    
+    .chart-content {
+      padding: 1rem;
+    }
+    
+    .chart-title {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .charts-container {
+      padding: 0.75rem;
+    }
+    
+    .recharts-legend-wrapper {
+      padding: 0.5rem 0.75rem;
+    }
+  }

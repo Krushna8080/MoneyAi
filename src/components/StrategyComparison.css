@@ -1,0 +1,222 @@
+/* StrategyComparison.css */
+.strategy-comparison {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .comparison-header {
+    margin-bottom: 2rem;
+  }
+  
+  .title-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .title-section h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111827;
+  }
+  
+  .header-icon {
+    color: #2563eb;
+  }
+  
+  .subtitle {
+    margin: 0.5rem 0 0 0;
+    color: #6b7280;
+    font-size: 0.875rem;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .timeframe-selector {
+    display: flex;
+    gap: 0.5rem;
+    background-color: #f3f4f6;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+  }
+  
+  .timeframe-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    color: #4b5563;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .timeframe-btn:hover {
+    background-color: #e5e7eb;
+  }
+  
+  .timeframe-btn.active {
+    background-color: white;
+    color: #2563eb;
+    font-weight: 500;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .date-range {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem;
+    background-color: #f3f4f6;
+    border-radius: 0.5rem;
+  }
+  
+  .date-input {
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    color: #374151;
+    background-color: white;
+    outline: none;
+    transition: all 0.2s;
+  }
+  
+  .date-input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+  }
+  
+  .performance-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .strategy-card {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    background-color: #f8fafc;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .strategy-card h3 {
+    margin: 0 0 1rem 0;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #6b7280;
+  }
+  
+  .strategy-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .strategy-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+  }
+  
+  .metrics {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .metric {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .metric .icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #6b7280;
+  }
+  
+  .metric .value {
+    font-weight: 600;
+    color: #111827;
+  }
+  
+  .metric .label {
+    font-size: 0.75rem;
+    color: #6b7280;
+  }
+  
+  .comparison-table {
+    overflow-x: auto;
+    border-radius: 0.5rem;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .comparison-table table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.875rem;
+  }
+  
+  .comparison-table th {
+    background-color: #f9fafb;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    color: #6b7280;
+    border-bottom: 1px solid #e5e7eb;
+    white-space: nowrap;
+  }
+  
+  .comparison-table td {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+    color: #374151;
+  }
+  
+  .comparison-table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .strategy-cell {
+    font-weight: 500;
+    color: #111827;
+  }
+  
+  .numeric {
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', monospace;
+    text-align: right;
+  }
+  
+  .positive {
+    color: #059669;
+  }
+  
+  .negative {
+    color: #dc2626;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 2rem;
+    color: #6b7280;
+  }
+  
+  .error {
+    text-align: center;
+    padding: 2rem;
+    color: #dc2626;
+    background-color: #fee2e2;
+    border-radius: 0.5rem;
+  }
